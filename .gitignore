@@ -1,0 +1,13 @@
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Optional: IDE/editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Optional: log files
+*.log
