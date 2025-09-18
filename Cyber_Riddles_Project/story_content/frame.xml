@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="false">
             <options>
-              <option name="title_text" value="Cyber_Riddles_Project" />
+              <option name="title_text" value="Cyber_Riddles_Project_Web_JSM" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -71,13 +71,13 @@
           <option name="search" value="false" />
           <option name="closed_captions" value="false" />
           <option name="settings" value="false" />
-          <option name="fullScreenToggle" value="true" />
+          <option name="fullScreenToggle" value="false" />
           <option name="playbackSpeedControl" value="false" />
         </options>
       </optiongroup>
       <optiongroup name="bottombaroptions">
         <options>
-          <option name="bottombar_enabled" value="true" />
+          <option name="bottombar_enabled" value="false" />
         </options>
       </optiongroup>
       <optiongroup name="buttonoptions">
@@ -92,7 +92,7 @@
           <option name="thumbnailEnabled" value="true" />
           <option name="thumbnailFillFrame" value="true" />
           <option name="thumbnailDisplayName" value="Slide: Start" />
-          <option name="thumbnailUrl" value="story_content/5Y3jwRRtcPc.png" />
+          <option name="thumbnailUrl" value="story_content/6SQAPzQmU3g.png" />
         </options>
       </optiongroup>
       <optiongroup name="ccOptions">
@@ -117,7 +117,7 @@
       <control name="next" enabled="false" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
-      <control name="fullScreenToggle" enabled="true" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
@@ -142,7 +142,7 @@
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
-      <control name="fullScreenToggle" enabled="true" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
@@ -167,7 +167,7 @@
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="true" />
-      <control name="fullScreenToggle" enabled="true" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
@@ -192,7 +192,7 @@
       <control name="next" enabled="false" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
-      <control name="fullScreenToggle" enabled="true" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
@@ -217,7 +217,7 @@
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
-      <control name="fullScreenToggle" enabled="true" />
+      <control name="fullScreenToggle" enabled="false" />
       <control name="playbackSpeedControl" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
@@ -1610,12 +1610,7 @@
             <slidelink slideid="_player.6fLQcUSwubu.6q6InpuDn17" displaytext="Leader Board" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5fY1FEIq0ki" displaytext="Untitled Scene" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.5fY1FEIq0ki.5swsAwTO47Z" displaytext="Web_Object" expand="false" type="slide" />
-            <slidelink slideid="_player.5fY1FEIq0ki.6QvfmGc1xcI" displaytext="Untitled Slide" expand="false" type="slide" />
-          </links>
-        </slidelink>
+        <slidelink slideid="" emptySceneId="_player.5fY1FEIq0ki" displaytext="Untitled Scene" expand="true" type="slide" />
       </links>
     </outline>
   </nav_data>
