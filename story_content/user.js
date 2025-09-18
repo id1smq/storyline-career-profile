@@ -969,7 +969,15 @@ let menuItemCount = 9;
 //Set the Scaling, Opacity, and zIndex Arrays
 let scaleFactorTo = [.75, 1.2, 0.50, 0.45, 0.30, 0.35, 0.40, 0.50, 0.50];//circular menu, clockwise from right
 let opacityFactorTo = [0.80, 1, 1.00, 0.90, 0.60, 0.50, 0.40, 0.40, 1.00];
+//let opacityFactorTo = [1, 1, 1, 1, 1, 1, 1, 1, 1];
 let zIndexFactorTo = [1,8,7,6,5,2,3,4,9];
+
+
+
+
+
+
+
 
 //Map the path segments to each of the menu items
 //this is the path the menu item last followed, currently at the end of the path
