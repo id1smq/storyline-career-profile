@@ -1560,6 +1560,7 @@
       <string id="video_transcript_title">Transcripts</string>
       <string id="zoom_to_fit">Zoom to fit</string>
       <string id="continue">Continue</string>
+      <string id="acc_correct_choice">%answer% (correct choice)</string>
       <string id="invalid_prompt_button">OK</string>
       <string id="invalid_prompt_message">You must complete the question before submitting.</string>
       <string id="invalid_prompt_title">Invalid Answer</string>
