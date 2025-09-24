@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="false">
             <options>
-              <option name="title_text" value="Cyber_Riddles_Activity" />
+              <option name="title_text" value="Cyber Riddles Activity" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -1569,6 +1569,7 @@
       <string id="video_transcript_title">Transcripts</string>
       <string id="zoom_to_fit">Zoom to fit</string>
       <string id="continue">Continue</string>
+      <string id="acc_correct_choice">%answer% (correct choice)</string>
       <string id="invalid_prompt_button">OK</string>
       <string id="invalid_prompt_message">You must complete the question before submitting.</string>
       <string id="invalid_prompt_title">Invalid Answer</string>
@@ -1610,7 +1611,6 @@
             <slidelink slideid="_player.6fLQcUSwubu.6q6InpuDn17" displaytext="Leader Board" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="" emptySceneId="_player.5fY1FEIq0ki" displaytext="Untitled Scene" expand="true" type="slide" />
       </links>
     </outline>
   </nav_data>
