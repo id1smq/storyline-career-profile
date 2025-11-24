@@ -94,6 +94,7 @@
           <option name="placement" value="100" />
           <option name="backgroundColor" value="#000000FF" />
           <option name="color" value="#FFFFFFFF" />
+          <option name="textShadow" value="1" />
         </options>
       </optiongroup>
     </optiongroups>
