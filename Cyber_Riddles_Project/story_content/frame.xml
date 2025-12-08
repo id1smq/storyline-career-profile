@@ -102,6 +102,7 @@
           <option name="placement" value="100" />
           <option name="backgroundColor" value="#000000FF" />
           <option name="color" value="#FFFFFFFF" />
+          <option name="textShadow" value="1" />
         </options>
       </optiongroup>
     </optiongroups>
@@ -1605,6 +1606,7 @@
             <slidelink slideid="_player.6fLQcUSwubu.6OtTWMrxjQv" displaytext="2-Factor_Authentication" expand="false" type="slide" />
             <slidelink slideid="_player.6fLQcUSwubu.6CxMbFB3Gqm" displaytext="Malware" expand="false" type="slide" />
             <slidelink slideid="_player.6fLQcUSwubu.5uJpYnOHbOp" displaytext="USB Drops" expand="false" type="slide" />
+            <slidelink slideid="_player.6fLQcUSwubu.6aoBSUVlwtJ" displaytext="Social engineering" expand="false" type="slide" />
             <slidelink slideid="_player.6fLQcUSwubu.5b7wpVBw6PZ" displaytext="Backups" expand="false" type="slide" />
             <slidelink slideid="_player.6fLQcUSwubu.5pbEwrvBogw" displaytext="Results" expand="false" type="slide" />
             <slidelink slideid="_player.6fLQcUSwubu.6q6InpuDn17" displaytext="Leader Board" expand="false" type="slide" />
