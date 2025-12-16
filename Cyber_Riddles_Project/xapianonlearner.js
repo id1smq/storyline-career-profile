@@ -113,7 +113,7 @@ function sendStatement(timer) {
             "display": { "en-US": "passed" }
         },
         "object": {
-            "id": "https://psaccess.ca/quizzes/HIPO_Quiz",
+            "id": "https://psaccess.ca/quizzes/CyberRiddles",
             "definition": {
                 "name": { "en-US": "HIPO Quiz" },
                 "description": { "en-US": "HIPO quiz in the PPA course" },
@@ -165,7 +165,7 @@ function populateLeaderboard() {
     const query = {
         "filter": {
             "verb.id": "https://psaccess.ca/verbs/passed",
-            "object.id": "https://psaccess.ca/quizzes/HIPO_Quiz",
+            "object.id": "https://psaccess.ca/quizzes/CyberRiddles",
             "result.success": { "$eq": true }
         },
         "process": [
@@ -210,6 +210,9 @@ function populateLeaderboard() {
 
     // Function to process the fetched statements
     function processStatements(statements) {
+		
+		const uniqueIdentifier = getUniqueIdentifier();
+		
         console.log("Parsed Statements:", statements);
         if (statements.length > 0) {
             statements.sort(function(a, b) {
@@ -224,17 +227,44 @@ function populateLeaderboard() {
                 }
             }
 
-            const newestElement = statements.reduce((newest, current) => {
-                if (!current.timestamp || !newest.timestamp) {
-                    console.log("Missing timestamp in one of the statements.");
-                    return newest;
-                }
-                console.log(`Comparing: ${current.timestamp} with ${newest.timestamp}`);
-                return new Date(current.timestamp) > new Date(newest.timestamp) ? current : newest;
-            }, statements[0]);
+           	
+			
+			const currentUserMbox = `mailto:${uniqueIdentifier}@gov.nl.ca`;
 
-            player.SetVar("timeCurrentuser", formatIsoString(newestElement.result.duration));
-        } else {
+				// 1) Filter statements belonging to the current actor
+				const myStatements = statements.filter(stmt =>
+					stmt.actor &&
+					stmt.actor.mbox === currentUserMbox &&
+					stmt.timestamp &&
+					stmt.result &&
+					stmt.result.duration
+				);
+
+				// 2) Prefer newest statement from current actor
+				let newestElement = null;
+
+				if (myStatements.length > 0) {
+					newestElement = myStatements.reduce((newest, current) =>
+						new Date(current.timestamp) > new Date(newest.timestamp) ? current : newest
+					);
+				} else {
+					// PoC fallback: newest overall (existing behavior)
+					newestElement = statements.reduce((newest, current) =>
+						new Date(current.timestamp) > new Date(newest.timestamp) ? current : newest
+					);
+				}
+
+				// 3) Set Storyline variable
+				if (newestElement && newestElement.result && newestElement.result.duration) {
+					player.SetVar(
+						"timeCurrentuser",
+						formatIsoString(newestElement.result.duration)
+					);
+				}
+			
+        }
+
+			else {
             alert("No statements found.");
         }
     }
